@@ -1,0 +1,17 @@
+{% load static %}
+<!DOCTYPE html>
+<head>
+  <title>Template</title>
+  <link rel="stylesheet" href="{% static 'myglobal.css' %}" />
+</head>
+<html>
+  <body>
+    {% for x in fruits %}
+    <h1>{{ x }}</h1>
+    {% endfor %} {%if greeting <= 1%}
+    <h1>asdf</h1>
+    {%endif%}
+
+    <p>In views.py you can see what the fruits variable looks like.</p>
+  </body>
+</html>
